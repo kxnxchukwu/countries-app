@@ -55,7 +55,7 @@ export default function Grid() {
       if (error) return <ErrorPage message= {error} /> 
 
 
-    return (<div className="container mx-auto mt-5 pt-5">
+    return (<div className="container mx-auto mt-2 pt-2">
     <div className="row">
     <SearchBar query = {query} setQuery = {setQuery} />
     {

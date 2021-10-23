@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SearchBar(props) {
     return (
-    <div className="search-wrapper row">
+    <div className="search-wrapper row mt-0 mp-0">
                         <label htmlFor="search-form">
                             <input
                                 type="search"
