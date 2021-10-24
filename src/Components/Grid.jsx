@@ -6,6 +6,7 @@ import SearchBar from "./SearchBar";
 import ModalContent from "./ModalContent";
 import {Button, Modal} from 'react-bootstrap';
 
+
 export default function Grid() {
 
     const [countries, setCountries] = useState();
@@ -60,7 +61,7 @@ export default function Grid() {
     <SearchBar query = {query} setQuery = {setQuery} />
     {
         countries.filter(q => {
-            let {name, region, population, capital, flags} = q;
+            let {name, flags} = q;
 
             if (name.common.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
                 return (
@@ -75,7 +76,7 @@ export default function Grid() {
 
         }).
         map((country) => {
-            let {name, population, region, capital, flags } = country
+            let {name, flags } = country
             return (
                 <Card 
                 key={name.common} 
@@ -88,6 +89,8 @@ export default function Grid() {
         })
     }
     </div>
+
+
     <>
     <Modal show={show} onHide={handleClose}>
                   <Modal.Header>
@@ -103,5 +106,6 @@ export default function Grid() {
                   </Modal.Footer>
     </Modal>
     </>
-  </div>);
+  </div>
+);
 }
