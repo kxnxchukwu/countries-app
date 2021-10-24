@@ -67,9 +67,6 @@ export default function Grid() {
                     <Card 
                     key={name.common} 
                     name = {name.common} 
-                    region = {region} 
-                    population={population} 
-                    capital= {capital} 
                     flag = {flags.svg} 
                     handleShow = {handleShow}
                     />
@@ -83,9 +80,6 @@ export default function Grid() {
                 <Card 
                 key={name.common} 
                 name = {name.common} 
-                region = {region} 
-                population={population} 
-                capital= {capital} 
                 flag = {flags.svg} 
                 data = {country} 
                 handleShow = {handleShow} 
@@ -96,7 +90,7 @@ export default function Grid() {
     </div>
     <>
     <Modal show={show} onHide={handleClose}>
-                  <Modal.Header closeButton>
+                  <Modal.Header>
                     <Modal.Title>{modalheading}</Modal.Title>
                   </Modal.Header>
                   <Modal.Body>

@@ -19,7 +19,8 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
     .card {
-        background-color: ${(props) => props.theme.body};
+        background-color: ${(props) => props.theme.body}!important;
+        color: ${(props) => props.theme.fontColor};
     }
 
     .bg-light {
