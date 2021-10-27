@@ -35,7 +35,6 @@ export default function Grid() {
             maps = {maps.googleMaps}
             region = {region}
             subregion = {subregion}
-
             />) 
         }
         })
@@ -60,7 +59,7 @@ export default function Grid() {
     <div className="row">
     <SearchBar query = {query} setQuery = {setQuery} />
     {
-        countries.filter(q => {
+        countries.sort((a, b) => a.name.common.localeCompare(b.name.common)).filter(q => {
             let {name, flags} = q;
 
             if (name.common.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
