@@ -35,7 +35,7 @@ export default function Grid() {
             maps = {maps.googleMaps}
             region = {region}
             subregion = {subregion}
-            />) 
+            />)
         }
         })
     }
@@ -72,9 +72,7 @@ export default function Grid() {
                     />
                 )
             }
-
-        }).
-        map((country) => {
+        }).map((country) => {
             let {name, flags } = country
             return (
                 <Card 

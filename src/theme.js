@@ -34,4 +34,7 @@ export const GlobalStyles = createGlobalStyle`
     .modal .modal-dialog .modal-content{  
         background-color: ${(props) => props.theme.body}!important; 
         }
+    .navbar-brand {
+        color: ${(props) => props.theme.fontColor}!important;
+    }
 `;
