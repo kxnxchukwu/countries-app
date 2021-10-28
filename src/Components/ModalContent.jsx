@@ -9,7 +9,7 @@ export default function ModalContent(props) {
     <br/>
     <h4 className="lead">Sub Region: {props.subregion}</h4>
     <br/>*/}
-    <h4 className="lead">Currencies: {Object.values(props.currencies).map(value => value.name + " ")}</h4>
+    <h4 className="lead">Currencies: {props.currencies ? Object.values(props.currencies).map(value => value.name + " ") : ""}</h4>
     <br/>
     {/*<h4 className="lead">Independent: {(props.independent) ? "Yes" : "No"}</h4>
     <br/>
