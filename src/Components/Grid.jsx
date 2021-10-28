@@ -6,7 +6,6 @@ import SearchBar from "./SearchBar";
 import ModalContent from "./ModalContent";
 import {Button, Modal} from 'react-bootstrap';
 
-
 export default function Grid() {
 
     const [countries, setCountries] = useState();
@@ -86,7 +85,6 @@ export default function Grid() {
         })
     }
     </div>
-
 
     <>
     <Modal show={show} onHide={handleClose}>
