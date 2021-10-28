@@ -5,7 +5,7 @@ import { fadeIn } from 'react-animations';
 const FadeInAnimation = keyframes`${fadeIn}`;
 
 const FadeInDiv = styled.div`
-  animation: 15s ${FadeInAnimation};
+  animation: 10s ${FadeInAnimation};
   display: inline;
 `;
 
